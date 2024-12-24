@@ -1,0 +1,62 @@
+body {
+    background-image: url('imagen.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* La imagen se ajusta para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    height: 100vh; /* Altura igual a la pantalla visible */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+/* CSS */
+.digital-clock {
+    background-color: black;
+    color: white;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 1rem 2rem;
+    border: 0.5rem solid #2d2d2d;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    margin-right: 1rem;
+}
+
+.week div {
+    color: gray; /* Por defecto, los días no activos estarán en gris */
+}
+
+.week .active {
+    color: white; /* Día activo resaltado */
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.time .hour,
+.time .min,
+.time .dot {
+    font-size: 8rem;
+}
+
+.time .dot {
+    margin: 0 0.5rem;
+}
+
+.invisible {
+    visibility: hidden;
+}
